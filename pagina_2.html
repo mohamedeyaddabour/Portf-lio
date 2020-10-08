@@ -1,0 +1,156 @@
+<!--  
+
+Tags
+
+  <style> </style> = para criar e nomear estilos e fontes, para facilitar o seu uso nas classes
+
+Classes 
+  
+  MAIORIA DOS NUMEROS PARA TAMANHOS (1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 14, 16, 20, 24, 32, 40, 48, 56, 64)
+
+  antialiased = não deixar o texto pixelado
+  bg-cor-ton = cor de fundo
+  m-auto = espaçamento externo automática
+  px-n / py-n / p-n (n=numero) = espacamento interno X ou Y 
+  text-cor = cor do texto
+  text-tamanho = dar tamanho ao texto ( xs, sm, base,  md, lg, xl, 2xl, 3xl, 4xl, 5xl, 6xl )
+  font-( bold, italic,
+  flex = deixar lado a lado
+  items-( center, start, end ) =  deixar o item ( centralizado, começo(para a esquerda), fim(para a direita) )
+  jusitfy-( between, center, start, end ) = para justificar o texto ( entre, centro, começo(para a esquerda), fim(para a direita) )
+  
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kody Portifólio | Sobre</title>
+    <link rel="shortcut icon" href="img/icon_page.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.8.7/tailwind.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .borda {
+            border: 2px solid #010000;
+        }
+        
+        .button {
+            background-color: #020000;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 4px 2px;
+            opacity: 0.6;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 100px;
+        }
+        
+        .button:hover {
+            opacity: 1
+        }
+        
+        @font-face {
+            font-family: PoppinsBold;
+            src: url("font/Poppins/Poppins-Bold.ttf");
+        }
+        
+        .font-pbold {
+            font-family: PoppinsBold;
+        }
+        
+        @font-face {
+            font-family: PoppinsLight;
+            src: url("font/Poppins/Poppins-ExtraLight.ttf");
+        }
+        
+        .font-plight {
+            font-family: PoppinsLight;
+        }
+        
+        @font-face {
+            font-family: PoppinsRegular;
+            src: url("font/Poppins/Poppins-Regular.ttf");
+        }
+        
+        .font-pregular {
+            font-family: PoppinsRegular;
+        }
+        
+        @font-face {
+            font-family: PoppinsThin;
+            src: url("font/Poppins/Poppins-Thin.ttf");
+        }
+        
+        .font-pthin {
+            font-family: PoppinsThin;
+        }
+        
+        #exibirImg {
+            max-height: 4569px;
+            max-width: 1920px;
+        }
+        
+        #textura {
+            background-image: url("img/fundo_t.png");
+        }
+        
+        #bg {
+            background-image: url("img/fundo_home.jpg");
+        }
+        
+        #exibir {
+            background-image: url("img/exibi_1.png");
+        }
+        
+        .h-85 {
+            height: 500px;
+        }
+        
+        .w-85 {
+            width: 500px;
+        }
+        
+        .w100 {
+            width: 930px;
+        }
+    </style>
+
+</head>
+
+<body id="textura" class="antialiased mx-12 my-6">
+    <div class="shadow-2xl">
+        <div class="flex items-center justify-between px-6 py-2 w-full h-24 bg-gray-200">
+            <h1 class="font-pbold text-4xl font-bold text-black">
+                Kody's Design
+            </h1>
+
+            <div class="flex text-center text-lg text-white font-bold space-x-10 items-center">
+                <a href="home.html">
+                    <button id="btn" class="shadow-md button font-pregular focus:outline-none">
+                Inicio
+            </button>
+                </a>
+                <a href="pagina_1.html">
+                    <button id="btn" class="shadow-md button font-pregular focus:outline-none">
+                Artes
+            </button>
+                </a>
+                <a href="pagina_2.html">
+                    <button id="btn" class="shadow-md button font-pregular focus:outline-none">
+                Sobre
+            </button>
+                </a>
+            </div>
+        </div>
+</body>
+
+</html>
